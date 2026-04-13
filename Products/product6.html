@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hoodie — URBANWEAR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <link rel="stylesheet" href="products.css">
+</head>
+<body>
+
+    <!--header-->
+    <nav class="header">
+      <div class="title">
+        <h1>Urbanwear</h1>
+      </div>
+
+      <div class="others">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../collection.html" class="nav-link">Collection</a>
+        <a href="../contact.html" class="nav-link">Contact us</a> 
+      </div>
+
+      <div class="menu-icon">
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </div>
+    </nav>
+
+    <!--menu-->
+    <div class="menu">
+      <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+
+      <h3><a href="../index.html">Home</a></h3>
+      <h3><a href="../collection.html">Collection</a></h3>
+      <h3><a href="../contact.html">Contact us</a></h3>
+    </div>
+
+<div class="page">
+
+  <!--Left: Gallery -->
+  <div class="gallery">
+    <span class="badge-tag">NEW DROP — SS25</span>
+    <button class="btn-wish" onclick="toggleWish(this)" title="Wishlist">♡</button>
+
+    <div class="main-img-wrap">
+      <!-- Replace with your own image path e.g. img/Hoodie.png -->
+      <img src="../img/white_t-shirt.avif" alt="Urban White Tee"/>
+    </div>
+  </div>
+
+  <!-- Right: Details -->
+  <div class="details">
+
+    <div class="brand-line">
+      <span class="brand-name">URBANWEAR</span>
+      <span class="divider-sm"></span>
+    </div>
+
+    <div class="product-title">
+      Classic<br/><span>white</span><br/>tee
+    </div>
+
+    <div class="rating-row">
+      <span class="stars">★★★★</span>
+      <span class="rating-count">4.0 &nbsp;·&nbsp; 201 reviews</span>
+    </div>
+
+    <div class="price-row">
+      <span class="price-main">₹399</span>
+      <span class="price-old">₹799</span>
+      <span class="price-save">50% OFF</span>
+    </div>
+
+    <!-- Size Selector -->
+    <div>
+      <div class="section-label">SELECT SIZE</div>
+      <div class="size-grid">
+        <button class="size-btn sold" disabled>XS</button>
+        <button class="size-btn" onclick="selectSize(this)">S</button>
+        <button class="size-btn active" onclick="selectSize(this)">M</button>
+        <button class="size-btn" onclick="selectSize(this)">L</button>
+        <button class="size-btn" onclick="selectSize(this)">XL</button>
+        <button class="size-btn" onclick="selectSize(this)">XXL</button>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-stack">
+      <button class="btn-primary" onclick="addToCart(this)">
+        <span id="cartIcon">🛍</span>
+        <span id="cartText">ADD TO CART</span>
+      </button>
+      <button class="btn-secondary">⚡ BUY NOW</button>
+    </div>
+
+    <!-- Perks -->
+    <div class="perks">
+      <div class="perk"><span class="perk-icon">🚚</span><span>Free delivery above ₹499</span></div>
+      <div class="perk"><span class="perk-icon">↩</span><span>7-day easy returns</span></div>
+      <div class="perk"><span class="perk-icon">🔒</span><span>Secure checkout</span></div>
+      <div class="perk"><span class="perk-icon">✂</span><span>Premium 340gsm fleece</span></div>
+    </div>
+
+    <!-- Accordion -->
+    <div class="accordion">
+      <div class="acc-item open">
+        <div class="acc-head" onclick="toggleAcc(this)">
+          PRODUCT DETAILS <span class="acc-arrow">▾</span>
+        </div>
+        <div class="acc-body">
+          Classic white t-shirt crafted from soft breathable cotton for everyday comfort. 
+          Designed with a clean minimal look and a modern regular fit that suits any outfit. 
+          Lightweight fabric ensures ease of movement while maintaining durability. Perfect for casual wear, 
+          layering, and daily essentials.
+        </div>
+      </div>
+      <div class="acc-item">
+        <div class="acc-head" onclick="toggleAcc(this)">
+          SIZE &amp; FIT <span class="acc-arrow">▾</span>
+        </div>
+        <div class="acc-body">
+          Regular fit design offering a comfortable and relaxed feel. Model is 5'11" wearing size M for reference. 
+          Fits true to size for a standard look. Size up for a more relaxed or oversized fit
+        </div>
+      </div>
+      <div class="acc-item">
+        <div class="acc-head" onclick="toggleAcc(this)">
+          CARE INSTRUCTIONS <span class="acc-arrow">▾</span>
+        </div>
+        <div class="acc-body">
+          Machine wash at 30°C. Do not tumble dry. Do not bleach. Iron on low
+          heat. Wash inside out to preserve print. Do not dry clean.
+        </div>
+      </div>
+      <div class="acc-item">
+        <div class="acc-head" onclick="toggleAcc(this)">
+          SHIPPING &amp; RETURNS <span class="acc-arrow">▾</span>
+        </div>
+        <div class="acc-body">
+          Standard delivery: 3–5 business days. Express: 1–2 days (₹99 extra).
+          Free returns within 7 days — item must be unused with original tags.
+          COD available.
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /details -->
+</div><!-- /page -->
+
+<script src="product.js"></script>
+
+</body>
+</html>
