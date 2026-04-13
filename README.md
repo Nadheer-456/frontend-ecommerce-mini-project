@@ -5,10 +5,7 @@ UrbanWear is a responsive and visually appealing e-commerce website built as par
 ---
 
 ## 🚀 Live Demo
-🌐 https://your-vercel-link.vercel.app  
-
-## 💻 GitHub Repository
-🔗 https://github.com/your-username/urbanwear-ecommerce-store  
+🌐 
 
 ---
 
@@ -93,7 +90,8 @@ E-commerce/
 
 ## 📸 Screenshots
 
-(Add your project screenshots here)
+<img width="1919" height="911" alt="Screenshot 2026-04-13 233454" src="https://github.com/user-attachments/assets/1b13b239-da13-41a0-b3e1-e8a86940bbfc" />
+
 
 ---
 
