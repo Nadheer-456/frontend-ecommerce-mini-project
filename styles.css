@@ -80,7 +80,7 @@
         }
 
         .menu {
-            width: 40%;
+            width: 50%;
             height: 100%;
             position: fixed;
             background-color:var(--color-mid);
